@@ -5,16 +5,20 @@ package demo20180723;
  */
 public class Student {
 
+
     public Student(String name, Integer age) {
-        this.name = name;
-        this.age = age;
+        this.setName(name);
+        this.setAge(age);
+    }
+
+    public Student() {
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
                 '}';
     }
 
@@ -36,4 +40,5 @@ public class Student {
     public void setAge(Integer age) {
         this.age = age;
     }
+
 }

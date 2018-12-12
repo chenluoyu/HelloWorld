@@ -55,22 +55,24 @@ public class TestList {
         list1.add(map3);
         list1.add(map4);
 
-        List<Map<String, Object>> list2 = new ArrayList<>();
-        list2.add(list1.get(0));
-        for (Map<String, Object> map11 : list1) {
-            for (Map<String, Object> map22 : list2) {
-                if (map11.get("abwqa").toString().trim().equals(map22.get("abwqa").toString().trim())
-                        && map11.get("abaasf").equals(map22.get("abaasf"))
-                        && map11.get("abzxca").equals(map22.get("abzxca"))) {
-                    int RK_SL = Integer.parseInt(map22.get("aba").toString());
-                    int ACTUALRUKU_QTY = Integer.parseInt(map11.get("aba").toString());
-                    map22.put("aba", RK_SL + ACTUALRUKU_QTY);
-                }
-            }
-        }
+//        List<Map<String, Object>> list2 = new ArrayList<>();
+//        list2.add(list1.get(0));
+//        for (Map<String, Object> map11 : list1) {
+//            for (Map<String, Object> map22 : list2) {
+//                if (map11.get("abwqa").toString().trim().equals(map22.get("abwqa").toString().trim())
+//                        && map11.get("abaasf").equals(map22.get("abaasf"))
+//                        && map11.get("abzxca").equals(map22.get("abzxca"))) {
+//                    int RK_SL = Integer.parseInt(map22.get("aba").toString());
+//                    int ACTUALRUKU_QTY = Integer.parseInt(map11.get("aba").toString());
+//                    map22.put("aba", RK_SL + ACTUALRUKU_QTY);
+//                }
+//            }
+//        }
 
 //        list1.stream().filter();
+        list1.forEach(map -> {
 
+        });
 
     }
 }
