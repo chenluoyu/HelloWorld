@@ -10,7 +10,7 @@ public class BuilderPatternDemo {
 
     public static void main(String[] args) {
 
-        MealBuilder mealBuilder = new MealBuilder();
+        /*MealBuilder mealBuilder = new MealBuilder();
 
         Meal vegMeal = mealBuilder.prepareVegMeal();
         System.out.println("Veg Meal");
@@ -20,10 +20,15 @@ public class BuilderPatternDemo {
         Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
         System.out.println("\n\nNon-Veg Meal");
         nonVegMeal.showItems();
-        System.out.println("Total Cost: " +nonVegMeal.getCost());
+        System.out.println("Total Cost: " +nonVegMeal.getCost());*/
 
-
+        getData(1,2,3);
     }
 
+    static void getData(Integer... numbers){
+        for (Integer i : numbers){
+            System.out.println(i);
+        }
+    }
 
 }
