@@ -16,10 +16,8 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + getName() + '\'' +
-                ", age=" + getAge() +
-                '}';
+//        return "Student{name='" + getName() + "', age=" + getAge() + "}";
+        return super.toString();
     }
 
     private String name;
@@ -41,4 +39,24 @@ public class Student {
         this.age = age;
     }
 
+
+    @Override
+    public int hashCode() {
+        return age.hashCode() * name.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null)
+            return false;
+        if (this == obj)
+            return true;
+        if (obj instanceof Student) {
+            Student student = (Student) obj;
+            // 比较每个属性的值 一致时才返回true
+            if (student.age == this.age && student.name.equals(this.name))
+                return true;
+        }
+        return false;
+    }
 }
