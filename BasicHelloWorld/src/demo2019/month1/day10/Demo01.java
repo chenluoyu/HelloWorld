@@ -18,6 +18,12 @@ public class Demo01 {
         String str = "合同变更金额校验失败：2019年1季度、2019年2季度、";
         System.out.println(str.substring(0,str.length()-1));
 
+
+        Class<? extends Demo01> aClass = new Demo01().getClass();
+
+        String classPath = aClass.getResource("").getPath();
+        System.out.println(classPath);
+
     }
 
 }
