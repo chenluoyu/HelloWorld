@@ -1,7 +1,5 @@
 package demo2019.month1.day10;
 
-import java.time.LocalDate;
-
 public class Demo01 {
 
     public static void main(String[] args) {

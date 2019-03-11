@@ -1,7 +1,5 @@
 package demo2019.month1.day08;
 
-import demo20180723.Student;
-
 public class Demo01 {
 
     public static void main(String[] args) {
