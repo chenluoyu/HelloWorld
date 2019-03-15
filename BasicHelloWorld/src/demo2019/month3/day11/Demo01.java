@@ -1,11 +1,14 @@
 package demo2019.month3.day11;
 
 import org.springframework.test.context.util.TestContextResourceUtils;
+import org.springframework.util.StopWatch;
 
 public class Demo01 {
 
 
     public static void main(String[] args) {
+        StopWatch watch = new StopWatch();
+        watch.start("main method start:");
 
         String[] paths = new String[6];
         paths[0] = "spring0.xml";           // classpath:/demo2019/month3/day11/spring0.xml
@@ -20,7 +23,9 @@ public class Demo01 {
             System.out.println(str);
         }
 
+        watch.stop();
 
+        System.out.println(watch.prettyPrint());
     }
 
 
